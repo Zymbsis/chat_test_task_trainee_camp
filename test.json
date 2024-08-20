@@ -1,0 +1,157 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "date": "Aug 15, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+        "date": "Aug 16, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Aenean lacinia bibendum nulla sed consectetur.",
+        "date": "Aug 17, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+        "date": "Aug 18, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Sed posuere consectetur est at lobortis.",
+        "date": "Aug 19, 2024"
+      }
+    ]
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "messages": [
+      {
+        "from": "contact",
+        "text": "Donec ullamcorper nulla non metus auctor fringilla.",
+        "date": "Aug 15, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+        "date": "Aug 16, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula.",
+        "date": "Aug 17, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+        "date": "Aug 18, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Curabitur blandit tempus porttitor.",
+        "date": "Aug 19, 2024"
+      }
+    ]
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Johnson",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Nulla vitae elit libero, a pharetra augue.",
+        "date": "Aug 15, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Curabitur blandit tempus porttitor.",
+        "date": "Aug 16, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Cras mattis consectetur purus sit amet fermentum.",
+        "date": "Aug 17, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "date": "Aug 18, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Vestibulum id ligula porta felis euismod semper.",
+        "date": "Aug 19, 2024"
+      }
+    ]
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Brown",
+    "messages": [
+      {
+        "from": "contact",
+        "text": "Maecenas faucibus mollis interdum.",
+        "date": "Aug 15, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Etiam porta sem malesuada magna mollis euismod.",
+        "date": "Aug 16, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+        "date": "Aug 17, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Nulla vitae elit libero, a pharetra augue.",
+        "date": "Aug 18, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Curabitur blandit tempus porttitor.",
+        "date": "Aug 19, 2024"
+      }
+    ]
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Williams",
+    "messages": [
+      {
+        "from": "me",
+        "text": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "date": "Aug 15, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Vestibulum id ligula porta felis euismod semper.",
+        "date": "Aug 16, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Donec ullamcorper nulla non metus auctor fringilla.",
+        "date": "Aug 17, 2024"
+      },
+      {
+        "from": "contact",
+        "text": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+        "date": "Aug 18, 2024"
+      },
+      {
+        "from": "me",
+        "text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+        "date": "Aug 19, 2024"
+      }
+    ]
+  }
+]
