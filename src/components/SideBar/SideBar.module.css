@@ -1,0 +1,6 @@
+.sidebar {
+  height: 100%;
+  width: calc(100% / 3);
+  background-color: #FFF;
+  border-right: 1px solid rgba(47, 47, 47, 0.20);
+}

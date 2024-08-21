@@ -1,0 +1,22 @@
+.title {
+  padding-left: 16px;
+  color: rgb(30, 205, 221);
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.chatsList {
+  width: 100%;
+  height: calc(100% - 280px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.chatsList > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px 12px 16px;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.mainChatHeader {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact > img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+}
+
+.contact > p {
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(47, 47, 47, 0.60);
+  max-width: 400px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnWrapper button {
+  border: 1px solid rgba(47, 47, 47, 0.20);
+  background-color: #FFF;
+  border-radius: 30px;
+  height: 46px;
+  width: 120px;
+  color: rgb(30, 205, 221);
+  font-weight: 700;
+  font-size: 16px;
+}

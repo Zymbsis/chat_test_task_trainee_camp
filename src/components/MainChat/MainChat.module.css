@@ -1,0 +1,5 @@
+.mainChat {
+  width: calc((100% / 3) * 2);
+  background-color: #F0EFF4;
+  height: 100%;
+}

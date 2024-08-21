@@ -7,7 +7,7 @@
       {
         "id": 1,
         "from": "me",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "date": "2024-08-15T03:45:00Z"
       },
       {
@@ -142,7 +142,7 @@
       {
         "id": 20,
         "from": "contact",
-        "text": "Curabitur blandit tempus porttitor.",
+        "text": "Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor. Curabitur blandit tempus porttitor.",
         "date": "2024-08-19T10:45:00Z"
       }
     ]
@@ -155,7 +155,7 @@
       {
         "id": 21,
         "from": "me",
-        "text": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+        "text": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
         "date": "2024-08-15T18:55:00Z"
       },
       {
@@ -167,7 +167,7 @@
       {
         "id": 23,
         "from": "me",
-        "text": "Donec ullamcorper nulla non metus auctor fringilla.",
+        "text": "Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla. Donec ullamcorper nulla non metus auctor fringilla.",
         "date": "2024-08-17T13:00:00Z"
       },
       {
@@ -181,6 +181,24 @@
         "from": "me",
         "text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
         "date": "2024-08-19T07:30:00Z"
+      },
+      {
+        "id": 26,
+        "from": "me",
+        "text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam",
+        "date": "2024-08-19T08:30:00Z"
+      },
+      {
+        "id": 27,
+        "from": "contact",
+        "text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam",
+        "date": "2024-08-19T09:30:00Z"
+      },
+      {
+        "id": 28,
+        "from": "me",
+        "text": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam",
+        "date": "2024-08-19T10:30:00Z"
       }
     ]
   }
