@@ -13,7 +13,8 @@ const MainChatPage = () => {
               className={css.avatar}
               src='../../public/vite.svg'
               width={50}
-              height={50}></img>
+              height={50}
+            />
             <button className={css.logoutBtn}>Log out</button>
           </div>
           <input
@@ -54,7 +55,8 @@ const MainChatPage = () => {
               className={css.chatHeaderAvatar}
               src='../../public/vite.svg'
               width={50}
-              height={50}></img>
+              height={50}
+            />
             <p>
               {test[0].firstName} {test[0].lastName}
             </p>
@@ -80,7 +82,8 @@ const MainChatPage = () => {
                   className={css.chatHeaderAvatar}
                   src='../../public/vite.svg'
                   width={50}
-                  height={50}></img>
+                  height={50}
+                />
               ) : null}
               <p>
                 <span>{item.text}</span>
