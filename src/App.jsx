@@ -1,43 +1,29 @@
-import { lazy, Suspense } from 'react';
+import { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import RestrictedRoute from './pages/RestrictedRoute';
-import PrivateRoute from './pages/PrivateRoute';
+
+import Layout from './components/Layout/Layout';
 const HomePage = lazy(() => import('./pages/HomePage'));
-const MessagesPage = lazy(() => import('./pages/MessagesPage'));
+const MainChatPage = lazy(() => import('./pages/MainChatPage'));
 
 const App = () => {
+  const isLoggedIn = true;
   return (
-    <Suspense>
+    <Layout>
       <Routes>
         <Route
           path='/'
-          element={
-            <RestrictedRoute
-              component={<HomePage />}
-              redirectTo='/messages'
-            />
-          }
+          element={isLoggedIn ? <Navigate to='/main_chat' /> : <HomePage />}
         />
         <Route
-          path='/messages'
-          element={
-            <PrivateRoute
-              component={<MessagesPage />}
-              redirectTo='/'
-            />
-          }
+          path='/main_chat'
+          element={isLoggedIn ? <MainChatPage /> : <Navigate to='/' />}
         />
         <Route
           path='*'
-          element={
-            <Navigate
-              to='/'
-              replace
-            />
-          }
+          element={<Navigate to='/' />}
         />
       </Routes>
-    </Suspense>
+    </Layout>
   );
 };
 
