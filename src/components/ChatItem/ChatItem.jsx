@@ -1,5 +1,5 @@
-import { parseDate } from '../../helpers/parseDate';
-import img from '../../img/kotik.jpg';
+import { parseDate } from 'helpers/parseDate';
+import avatar from 'img/avatar.jpg';
 import css from './ChatItem.module.css';
 
 const ChatItem = ({ chat: { firstName, lastName, messages } }) => {
@@ -12,7 +12,7 @@ const ChatItem = ({ chat: { firstName, lastName, messages } }) => {
       <div className={css.contact}>
         <img
           className={css.avatar}
-          src={img}
+          src={avatar}
           width={50}
           height={50}
         />

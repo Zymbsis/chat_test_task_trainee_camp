@@ -1,8 +1,9 @@
+import { useSelector } from 'react-redux';
+import { selectActiveChat } from '@redux/chats/slice';
+import Message from '../Message/Message';
+import messenger from 'img/messenger.webp';
 import clsx from 'clsx';
 import css from './MessageThread.module.css';
-import Message from '../Message/Message';
-import { useSelector } from 'react-redux';
-import { selectActiveChat } from '../../redux/chats/slice';
 
 const MessageThread = () => {
   const activeChat = useSelector(selectActiveChat);
@@ -13,7 +14,7 @@ const MessageThread = () => {
         <ul className={css.messagesList}>
           {activeChat.messages.map((item) => (
             <li
-              key={item.date}
+              key={item._id}
               className={clsx(css.conversationItem, {
                 [css.fromMe]: item.from === 'me',
               })}>
@@ -27,7 +28,14 @@ const MessageThread = () => {
           <p>There are no messages yet.</p>
         </div>
       )}
-      {!activeChat && <p>Hello world</p>}
+      {!activeChat && (
+        <img
+          className={css.messengerLogo}
+          src={messenger}
+          alt='Messenger'
+          width={250}
+        />
+      )}
     </div>
   );
 };

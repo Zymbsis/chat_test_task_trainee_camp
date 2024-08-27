@@ -1,7 +1,7 @@
-import css from './SideBarHeader.module.css';
-import img from '../../img/kotik.jpg';
-import { useModal } from '../../context/createModalContext';
+import avatar from 'img/avatar.jpg';
+import { useModal } from 'context/createModalContext';
 import CreateChatModal from '../CreateChatModal/CreateChatModal';
+import css from './SideBarHeader.module.css';
 
 const SideBarHeader = ({ valueForSearch, handleChangeValue }) => {
   const { openModal } = useModal();
@@ -19,7 +19,7 @@ const SideBarHeader = ({ valueForSearch, handleChangeValue }) => {
       <div className={css.userBar}>
         <img
           className={css.avatar}
-          src={img}
+          src={avatar}
           width={50}
           height={50}
         />

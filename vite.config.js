@@ -14,7 +14,7 @@ export default defineConfig({
       context: '/src/context',
       helpers: '/src/helpers',
       icons: '/src/icons',
-      image: '/src/image',
+      img: '/src/img',
       pages: '/src/pages',
       '@redux': '/src/redux',
       services: '/src/services',

@@ -1,14 +1,11 @@
-import css from './ChatsList.module.css';
-import ChatItem from '../ChatItem/ChatItem';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  selectActiveChatId,
-  selectChatsList,
-} from '../../redux/chats/selectors';
-import { getChatActive } from '../../redux/chats/slice';
-import clsx from 'clsx';
-import { useModal } from '../../context/createModalContext';
+import { useModal } from 'context/createModalContext';
+import { selectActiveChatId, selectChatsList } from '@redux/chats/selectors';
+import { getChatActive } from '@redux/chats/slice';
+import ChatItem from '../ChatItem/ChatItem';
 import CreateChatModal from '../CreateChatModal/CreateChatModal';
+import clsx from 'clsx';
+import css from './ChatsList.module.css';
 
 const ChatsList = ({ valueForSearch, handleChangeValue }) => {
   const dispatch = useDispatch();
@@ -16,11 +13,13 @@ const ChatsList = ({ valueForSearch, handleChangeValue }) => {
   const chatsList = useSelector(selectChatsList);
   const activeChatId = useSelector(selectActiveChatId);
 
-  const filteredChatsList = chatsList.filter(
-    (item) =>
-      item.firstName.toLowerCase().includes(valueForSearch.toLowerCase()) ||
-      item.lastName.toLowerCase().includes(valueForSearch.toLowerCase()),
-  );
+  const filteredChatsList = chatsList
+    .filter(
+      (item) =>
+        item.firstName.toLowerCase().includes(valueForSearch.toLowerCase()) ||
+        item.lastName.toLowerCase().includes(valueForSearch.toLowerCase()),
+    )
+    .reverse();
 
   const openCreateChatModal = () => {
     handleChangeValue('');

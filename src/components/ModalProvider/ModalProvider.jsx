@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { modalContext } from '../../context/createModalContext';
-import icon from '../../img/sprite.svg';
+import { modalContext } from 'context/createModalContext';
+import icon from 'img/sprite.svg';
 import css from './ModalProvider.module.css';
 
 const ModalProvider = ({ children }) => {
@@ -10,10 +10,6 @@ const ModalProvider = ({ children }) => {
   const openModal = (content) => {
     setModalContent(content);
   };
-  // const closeModal = () => {
-  //   setModalContent(null);
-  // };
-
   const handleCloseModal = useCallback((e) => {
     if (
       e.target === e.currentTarget ||

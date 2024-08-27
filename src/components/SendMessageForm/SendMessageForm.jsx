@@ -1,14 +1,13 @@
-import css from './SendMessageForm.module.css';
-import icon from '../../img/sprite.svg';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectActiveChatId } from '../../redux/chats/selectors';
-import clsx from 'clsx';
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import { sendMessage } from '../../redux/chats/slice';
-import { formatDateToISO } from '../../helpers/formatDateToISO';
-import { getQuotes } from '../../redux/chats/operations';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectActiveChatId } from '@redux/chats/selectors';
+import { getQuotes, sendMessage } from '@redux/chats/operations';
+import { useForm } from 'react-hook-form';
+import { formatDateToISO } from 'helpers/formatDateToISO';
+import icon from 'img/sprite.svg';
+import clsx from 'clsx';
+import css from './SendMessageForm.module.css';
 
 const sendMessageSchema = yup
   .object({
@@ -24,13 +23,7 @@ const SendMessageForm = () => {
 
   const dispatch = useDispatch();
 
-  // console.log(activeChatId);
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm({
+  const { register, handleSubmit, reset } = useForm({
     defaultValues: { message: '' },
     resolver: yupResolver(sendMessageSchema),
   });
@@ -42,7 +35,7 @@ const SendMessageForm = () => {
       text: data.message,
       date: formatDateToISO(),
     };
-    dispatch(sendMessage({ id: activeChatId, message }));
+    dispatch(sendMessage({ _id: activeChatId, params: message }));
     dispatch(getQuotes(activeChatId));
     reset();
   };

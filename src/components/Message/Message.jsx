@@ -1,7 +1,7 @@
-import css from './Message.module.css';
-import img from '../../img/kotik.jpg';
-import { parseFullDate } from '../../helpers/parseDate';
+import { parseFullDate } from 'helpers/parseDate';
+import avatar from 'img/avatar.jpg';
 import clsx from 'clsx';
+import css from './Message.module.css';
 
 const Message = ({ chat: { from, text, date } }) => {
   const formattedDate = parseFullDate(date);
@@ -11,7 +11,7 @@ const Message = ({ chat: { from, text, date } }) => {
       {from !== 'me' && (
         <img
           className={css.avatar}
-          src={img}
+          src={avatar}
           width={50}
           height={50}
         />

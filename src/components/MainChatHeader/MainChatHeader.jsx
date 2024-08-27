@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
-import img from '../../img/kotik.jpg';
-import css from './MainChatHeader.module.css';
-import { useModal } from '../../context/createModalContext';
-import { selectActiveChat } from '../../redux/chats/slice';
+import { useModal } from 'context/createModalContext';
+import { selectActiveChat } from '@redux/chats/slice';
 import UpdateChatModal from '../UpdateChatModal/UpdateChatModal';
 import DeleteChatModal from '../DeleteChatModal/DeleteChatModal';
+import avatar from 'img/avatar.jpg';
+import css from './MainChatHeader.module.css';
 
 const MainChatHeader = () => {
   const activeChat = useSelector(selectActiveChat);
@@ -22,7 +22,7 @@ const MainChatHeader = () => {
         <>
           <div className={css.contact}>
             <img
-              src={img}
+              src={avatar}
               width={50}
               height={50}
             />

@@ -1,6 +1,7 @@
 .wrapper {
   height: calc(100% - 220px);
   border-bottom: 1px solid rgba(47, 47, 47, 0.20);
+  position: relative;
 }
 
 .messagesList::-webkit-scrollbar {
@@ -49,4 +50,14 @@
   background-color: #323F47;
   padding: 10px 20px;
   color: #F0EFF4;
+}
+
+.messengerLogo {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 26.667px 48.889px 33.778px 0px rgba(0, 0, 0, 0.05), 2.667px 5.333px 13.333px 0px rgba(0, 0, 0, 0.10);
 }

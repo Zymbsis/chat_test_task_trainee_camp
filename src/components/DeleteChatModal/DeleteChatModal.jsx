@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useModal } from '../../context/createModalContext';
-import { deleteChat } from '../../redux/chats/operations';
-import { selectActiveChat } from '../../redux/chats/slice';
+import { useModal } from 'context/createModalContext';
+import { deleteChat } from '@redux/chats/operations';
+import { selectActiveChat } from '@redux/chats/slice';
 import css from './DeleteChatModal.module.css';
 
 const DeleteChatModal = () => {

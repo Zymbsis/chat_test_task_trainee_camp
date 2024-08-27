@@ -3,6 +3,7 @@ import {
   createNewChat,
   deleteChat,
   getChatsList,
+  sendMessage,
   updateChat,
 } from './operations';
 import { selectActiveChatId, selectChatsList } from './selectors';
@@ -16,12 +17,6 @@ const chatSlice = createSlice({
   reducers: {
     getChatActive: (state, action) => {
       state.activeChatId = action.payload;
-    },
-    sendMessage: (state, action) => {
-      const chat = state.chatsList.find(
-        (item) => item._id === action.payload.id,
-      );
-      chat?.messages.push(action.payload.message);
     },
   },
   extraReducers: (builder) => {
@@ -39,6 +34,12 @@ const chatSlice = createSlice({
         );
         state.activeChatId = null;
       })
+      .addCase(sendMessage.fulfilled, (state, action) => {
+        const chat = state.chatsList.find(
+          (item) => item._id === action.payload.data.parentId,
+        );
+        chat?.messages.push(action.payload.data.message);
+      })
       .addCase(updateChat.fulfilled, (state, action) => {
         state.chatsList = state.chatsList.map((item) =>
           item._id !== action.payload.data.chat._id
@@ -55,4 +56,4 @@ export const selectActiveChat = createSelector(
 );
 
 export const chatsReducer = chatSlice.reducer;
-export const { getChatActive, sendMessage } = chatSlice.actions;
+export const { getChatActive } = chatSlice.actions;

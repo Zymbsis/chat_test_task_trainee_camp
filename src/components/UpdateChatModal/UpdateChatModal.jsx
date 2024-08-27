@@ -1,11 +1,11 @@
 import * as yup from 'yup';
-import ChatForm from '../ChatForm/ChatForm';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectActiveChat } from '../../redux/chats/slice';
-import { updateChat } from '../../redux/chats/operations';
-import { useModal } from '../../context/createModalContext';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
+import { useModal } from 'context/createModalContext';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectActiveChat } from '@redux/chats/slice';
+import { updateChat } from '@redux/chats/operations';
+import ChatForm from '../ChatForm/ChatForm';
 
 const updateChatSchema = yup.object({
   firstName: yup

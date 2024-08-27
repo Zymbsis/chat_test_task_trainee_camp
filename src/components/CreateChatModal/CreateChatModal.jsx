@@ -1,10 +1,10 @@
 import { useDispatch } from 'react-redux';
-import ChatForm from '../ChatForm/ChatForm';
-import * as yup from 'yup';
-import { createNewChat } from '../../redux/chats/operations';
-import { useModal } from '../../context/createModalContext';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { useForm } from 'react-hook-form';
+import * as yup from 'yup';
+import { useModal } from 'context/createModalContext';
+import ChatForm from '../ChatForm/ChatForm';
+import { createNewChat } from '@redux/chats/operations';
 
 const createChatSchema = yup.object({
   firstName: yup

@@ -11,3 +11,17 @@
   margin: 0 auto;
   height: 100%;
 }
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  border-top: 1px solid rgba(47, 47, 47, 0.20);
+}
+
+.messenger {
+  height: calc(100% - 80px);
+  width: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 26.667px 48.889px 33.778px 0px rgba(0, 0, 0, 0.05), 2.667px 5.333px 13.333px 0px rgba(0, 0, 0, 0.10);
+}

@@ -1,4 +1,4 @@
-import { useModal } from '../../context/createModalContext';
+import { useModal } from 'context/createModalContext';
 import css from './ChatForm.module.css';
 
 const ChatForm = ({ register, errors, onSubmit, btnName }) => {
