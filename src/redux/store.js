@@ -15,7 +15,7 @@ import { chatsReducer } from './chats/slice';
 const chatsPersistConfig = {
   key: 'chats',
   storage,
-  whitelist: ['activeChat'],
+  whitelist: ['activeChatId'],
 };
 export const store = configureStore({
   reducer: {

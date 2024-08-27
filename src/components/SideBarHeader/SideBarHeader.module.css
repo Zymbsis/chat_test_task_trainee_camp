@@ -18,8 +18,14 @@
   border-radius: 100px;
 }
 
-.userBar > button {
-  width: 120px;
+.btnWrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.btnWrapper > button {
+  width: fit-content;
+  padding: 0 20px;
   height: 46px;
   background-color: #FFF;
   border: 1px solid rgba(47, 47, 47, 0.20);

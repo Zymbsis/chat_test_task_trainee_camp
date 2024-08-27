@@ -12,6 +12,20 @@
   overflow-x: hidden;
 }
 
+.chatsList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chatsList::-webkit-scrollbar-thumb {
+  background-color: rgba(47, 47, 47, 0.20);
+  border-radius: 4px;
+}
+
+.chatsList::-webkit-scrollbar-track {
+  background-color: rgba(47, 47, 47, 0.20);
+  border-radius: 4px;
+}
+
 .chatsList > li {
   display: flex;
   justify-content: space-between;
@@ -19,4 +33,22 @@
   padding: 12px 16px 12px 16px;
   border-bottom: 1px solid rgba(47, 47, 47, 0.20);
   cursor: pointer;
+}
+
+.chatsList > li.active {
+  background-color: rgba(30, 205, 221, 0.2);
+}
+
+.createChatBtn {
+  width: 250px;
+  height: 56px;
+  background-color: #FFF;
+  border: 1px solid rgba(47, 47, 47, 0.20);
+  border-radius: 30px;
+  color: rgb(30, 205, 221);
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
 }

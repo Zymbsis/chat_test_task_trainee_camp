@@ -3,7 +3,9 @@ import img from '../../img/kotik.jpg';
 import css from './ChatItem.module.css';
 
 const ChatItem = ({ chat: { firstName, lastName, messages } }) => {
-  const formattedDate = parseDate(messages[messages.length - 1].date);
+  const formattedDate = messages.length
+    ? parseDate(messages[messages.length - 1].date)
+    : '';
 
   return (
     <>
@@ -18,7 +20,9 @@ const ChatItem = ({ chat: { firstName, lastName, messages } }) => {
           <span>
             {firstName} {lastName}
           </span>
-          <span>{messages[messages.length - 1].text}</span>
+          <span>
+            {messages.length ? messages[messages.length - 1].text : '...'}
+          </span>
         </p>
       </div>
       <span className={css.date}>{formattedDate}</span>

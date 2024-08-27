@@ -1,0 +1,48 @@
+.wrapper {
+  height: 100%;
+  width: 450px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper p:first-of-type {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper p:first-of-type span {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgba(47, 47, 47, 0.60);
+  text-decoration: underline;
+}
+
+.wrapper p:last-of-type {
+  font-size: 18px;
+  color: rgba(47, 47, 47, 0.60)
+}
+
+.btnWrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.btnWrapper button {
+  border: 1px solid rgba(47, 47, 47, 0.20);
+  background-color: #FFF;
+  border-radius: 30px;
+  height: 46px;
+  width: 120px;
+  color: rgb(30, 205, 221);
+  font-weight: 700;
+  font-size: 16px;
+}
