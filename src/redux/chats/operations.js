@@ -8,7 +8,7 @@ const instance = axios.create({
   baseURL: 'https://chat-test-task-trainee-camp-backend.onrender.com',
 });
 const quotesInstance = axios.create({
-  baseURL: 'https://api.quotable.io',
+  baseURL: 'http://api.quotable.io',
 });
 
 export const getChatsList = createAsyncThunk(
